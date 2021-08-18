@@ -1,0 +1,85 @@
+footer{
+    width: 100%;
+    background-image: url(../images/footer_bg.png);
+    .portion{
+        margin-bottom: 30px;
+        h2{
+            color: var(--white-color);
+            font-size: 18px;
+            font-family: var(--black-font);
+            padding-bottom: 26px;
+            position: relative;
+            margin-bottom: 25px;
+            &::before{
+                width: 14px;
+                height: 3px;
+                background-color: var(--white-color);
+                border-radius: 10px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: "";
+            }
+            &::after{
+                width: 36px;
+                height: 3px;
+                background-color: var(--primary-color);
+                border-radius: 10px;
+                position: absolute;
+                bottom: 0;
+                left: 20px;
+                content: "";
+            }
+        }
+        h3{
+            font-size: 15px;
+            font-family: var(--black-font);
+            color: var(--white-color);
+            margin-bottom: 18px;
+        }
+        p{
+            
+            line-height: 28px;
+            color: var(--white-light);
+        }
+        ul{
+            &.ft_menu{
+                li{
+                    margin-bottom: 20px;
+                    flex: 0 0 50%;
+                    &:last-child{
+                        flex: 0 0 100%;
+                    }
+                    a{
+                        color: var(--white-light);
+                    }
+                }
+                
+            }
+            &.contacts{
+                li{
+                    margin-bottom: 20px;
+                    color: var(--white-light); 
+                    i{
+                        color: var(--primary-color);
+                        font-size: 18px;
+                        width: 25px;
+                    }
+                }
+            }
+            &.social{
+                margin-top: 30px;
+                li{
+                    margin-right: 17px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        color: var(--white-light); 
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

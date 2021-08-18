@@ -1,0 +1,13 @@
+.ins_feed_section{
+    width: 100%;
+    .main_section{
+        margin-top: 44px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        img{
+            width: 100%;
+        }
+    }
+}

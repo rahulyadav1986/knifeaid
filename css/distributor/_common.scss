@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+  @font-face {
+    font-family: 'Satoshi-Light';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+         url('../fonts/Satoshi-Light.woff') format('woff'),
+         url('../fonts/Satoshi-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('../fonts/Satoshi-Medium.woff') format('woff'),
+         url('../fonts/Satoshi-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff'),
+         url('../fonts/Satoshi-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Black';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+         url('../fonts/Satoshi-Black.woff') format('woff'),
+         url('../fonts/Satoshi-Black.ttf') format('truetype');
+         font-weight: 900;
+         font-display: swap;
+         font-style: normal;
+  }
+:root{
+    --primary-color: #CF0A2C;
+    --secondary-color: #1A1A1A;
+    --common-color: #333333;
+    --dark-color: #252525;
+    --description-color:#7D7D7D;
+    --white-color: #fff;
+    --white-light:#E5E5E5;
+    --regular-font:'Satoshi-Regular';
+    --bold-font:'Satoshi-Bold';
+    --black-font:'Satoshi-Black';
+    --midium-font:'Satoshi-Medium';
+    --light-font:'Satoshi-Light';
+    
+    
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family:var(--regular-font); 
+    font-size: 14px; 
+    color: var(--description-color); 
+    line-height: 21px; 
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 21px;
+}
+
+
+
+p{
+    margin: 0; padding: 0; 
+}
+
+
+ul, li{
+    margin: 0; padding: 0;list-style: none;
+}
+a{
+    text-decoration: none;color: var(--common-color);
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    margin: 0; padding: 0;
+}
+
+.pt{
+    padding-top: 65px;
+}
+.pb{
+    padding-bottom: 65px;
+}
+
+.container{
+    max-width: 1264px;
+    width: 100%;
+}
+
+.custom_button{
+    margin: 0;  position: relative; z-index: 1;
+    
+    a{
+        width: 157px;
+        height: 46px;
+        border-radius: 5px;
+        font-family: var(--black-font);
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        font-size: 12px;
+        text-transform: capitalize;
+        letter-spacing: .3px;
+        transition: all .5s ease-in-out;
+        &:hover{
+            background-color: var(--secondary-color);
+        }
+    }
+   
+    
+}
+
+.custom_heading{
+    &.center{
+        text-align: center;
+    }
+    h3{
+        font-size: 21px;
+        font-family: var(--midium-font);
+        padding: 0 40px;
+        position: relative;
+        display: inline-block;
+        line-height: .7;
+        margin-bottom: 22px;;
+        &::before{
+            width: 30px;
+            height: 2px;
+            background-color: var(--primary-color);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+        }
+        &::after{
+            width: 30px;
+            height: 2px;
+            background-color: var(--primary-color);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            content: "";
+        }
+    }
+    h2{
+        font-size: 40px;
+        font-family: var(--black-font);
+        span{
+            font-family: var(--midium-font);
+            color: var(--primary-color);
+        }
+    }
+}
+
+
+@media only screen and (max-width:1365px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media only screen and (max-width:1200px){
+    .container{
+        max-width: 992px;
+    }
+}
+@media only screen and (max-width:991px){
+    .container{
+        max-width: 768px;
+    }
+}
+@media only screen and (max-width:779px){
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .pt{
+        padding-top: 20px;
+    }
+    .pb{
+        padding-bottom: 20px;
+    }
+    .custom_heading h2{
+        font-size: 30px;
+    }
+}
+
+
+
+
+

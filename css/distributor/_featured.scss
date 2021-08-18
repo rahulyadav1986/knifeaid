@@ -1,0 +1,19 @@
+.featured_section{
+    width: 100%;
+    background-image: url(../images/featured_bg.png);
+    background-size: cover;
+    .main_section{
+        width: 100%;
+        margin-top: 54px;
+        .c_logo2{
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .featured_section .main_section img{
+        width: 100%;
+    }
+}

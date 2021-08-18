@@ -1,0 +1,179 @@
+@import "./menu";
+
+header{
+    width: 100%;
+    padding: 0 0;
+    .container{
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .logo{
+        img{
+            height: 25px;
+        }
+    }
+    .right_details{
+        ul{
+            &.menu{
+                margin-right: 48px;
+                li{
+                    margin-right: 33px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        text-transform: capitalize;
+                        font-family: var(--midium-font);
+                        letter-spacing: .3px;
+                        transition: all .5s ease-in-out;
+                        &:hover{
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        .account_details{
+            margin-right: 32px;
+            .before_login{
+                cursor: pointer;
+                img{
+                    margin-right: 5px;
+                    display: block;
+                }
+                font-family: var(--black-font);
+                font-size: 12px;
+                color: var(--common-color);
+                transition: all .5s ease-in-out;
+                &:hover{
+                    color: var(--primary-color);
+                }
+            }
+        }
+        .custom_button{
+            a{
+                width: 137px;
+                height: 38px;
+                
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1365px){
+    header{
+        .right_details{
+            ul{
+                &.menu{
+                    margin-right: 20px;
+                    li{
+                        margin-right: 15px;
+                        a{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .account_details{
+                margin-right: 20px;
+            }
+            .custom_button {
+                a{
+                    width: 104px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    header {
+        .container{
+            padding-right: 55px;
+        }
+        .right_details{
+            .mobile_menu{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    header {
+        .logo{
+            img{
+                height: 16px;
+            }
+        }
+        .slicknav_menu .slicknav_btn{
+            width: 30px;
+            height: 30px;
+        }
+        .right_details{
+            .custom_button{
+                a{
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:379px){
+    header {
+        .container{
+            padding-right: 47px;
+        }
+        .slicknav_menu .slicknav_btn{
+            width: 30px;
+            height: 30px;
+        }
+        .right_details{
+            .account_details{
+                margin-right: 9px;
+                .before_login{
+                    font-size: 10px;
+                    img{
+                        height: 25px;
+                        margin-right: 0;
+                    }
+                }
+            }
+            .custom_button{
+                a{
+                    height: 30px;
+                    font-size: 9px;
+                    width: 84px;
+                }
+            }
+        }
+    }
+}
+
+/*@media only screen and (max-width:379px){
+    header {
+        .container{
+            flex-wrap: wrap;
+        }
+        .logo{
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }        
+        .right_details{
+            flex-basis: 100%;
+            justify-content: space-between;
+            .mobile_menu{
+                display: none;
+            }
+        }
+    }
+}*/
+
+
+

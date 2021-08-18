@@ -1,0 +1,106 @@
+.full_screen_add_section{
+    width: 100%;
+    height: 480px;
+    position: relative;
+    &.gurantee{
+        h2{
+            color: var(--white-color);
+            text-align: center;
+            span{
+                font-size: 32px;
+                font-family: var(--regular-font);
+                color: var(--white-color);
+            }
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: top left;
+    }
+    .container{
+        position: relative;
+        z-index: 2;
+    }
+    h2{
+        font-family: var(--black-font);
+        font-size: 48px;
+        line-height: 60px;
+        span{
+            color: var(--primary-color);
+            font-family: var(--midium-font);
+        }
+    }
+    .custom_button{
+        margin-top: 30px;
+        a{
+            width: 209px;
+            height: 50px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .full_screen_add_section{
+        height: 366px;
+    }
+}
+@media only screen and (max-width:1365px){
+    .full_screen_add_section{
+        height: 266px;
+        h2{
+            font-size: 40px;
+            line-height: 52px;
+        }
+    }
+}
+@media only screen and (max-width:991px){
+    .full_screen_add_section{
+        height: auto;
+        padding: 65px 0;
+        text-align: center;
+        &::before{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255,255,255,.5);
+            content: "";
+            z-index: 1;
+        }
+        h2{
+            font-size: 34px;
+            line-height: 40px;
+        }
+        .custom_button{
+            display: inline-block;
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .full_screen_add_section{
+        padding: 30px 0;
+        &.gurantee {
+            h2{
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+        h2{
+            font-size: 26px;
+            line-height: 30px;
+            
+        }
+        .custom_button{
+            display: inline-block;
+        }
+    }
+}

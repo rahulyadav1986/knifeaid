@@ -1,0 +1,104 @@
+.brands_back{
+    width: 100%;
+    .content_area{
+        position: relative;
+        img{
+            position: absolute;
+            top: -35px;
+            left: -100px;
+            margin: auto;
+        }
+        p{
+            font-size: 18px;
+            line-height: 31px;
+        }
+    }
+    .gallery{
+        overflow-x: auto;
+        padding-bottom: 40px;
+        
+        &::-webkit-scrollbar {
+            width: 10px;
+          }
+           
+        &::-webkit-scrollbar-track {
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 50px;
+          }
+           
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--primary-color);
+            border-radius: 50px;
+          }
+        .portion{
+            flex: 0 0 210px;
+            height: 155px;
+            border-right: #E5E5E5 1px solid;
+            border-top: #E5E5E5 1px solid;
+            border-bottom: #E5E5E5 1px solid;
+           
+            &:first-child{
+                border-left: #E5E5E5 1px solid;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1365px){
+    .brands_back{
+        .content_area{
+            img{
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+            .custom_heading{
+                h2{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .brands_back{
+        text-align: center;
+        .content_area{
+            padding-bottom: 50px;
+            img{
+                width: 50%;
+                right: 0;
+                
+            }
+            .custom_heading{
+                h2{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .brands_back{
+        text-align: center;
+        .content_area{
+            padding-bottom: 50px;
+            img{
+                width: 80%;
+                right: 0;
+                
+            }
+            .custom_heading{
+                h2{
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .gallery{
+            padding-bottom: 30px;
+        }
+    }
+}
