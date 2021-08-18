@@ -416,10 +416,34 @@ header .right_details ul.menu li a {
   letter-spacing: .3px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  position: relative;
+}
+
+header .right_details ul.menu li a:after {
+  width: 0%;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  margin: auto;
+  content: "";
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 header .right_details ul.menu li a:hover {
   color: var(--primary-color);
+}
+
+header .right_details ul.menu li a:hover::after {
+  width: 100%;
+}
+
+header .right_details ul.menu li.current_menu_item a::after {
+  width: 100%;
 }
 
 header .right_details .account_details {
